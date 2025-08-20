@@ -1,43 +1,79 @@
 .gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
 
+.gallery-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
 }
 
 .row{
-    margin: 0;
-    gap: 2rem 0px;
+  margin: 0;
+  gap: 2rem 0px;
 }
 
 .card-img-top {
-      object-fit: cover;
-      height: 20rem;
-    }
+  object-fit: cover;
+  height: 20rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 220px;
+  object-fit: cover; /* keeps images uniform */
+}
 
-    .card {
-      height: 100%;
-    }
+#AboutUs .card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #BF1F3C; /* red accent */
+  border-bottom: 2px solid #035AA6; 
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
 
-    #Prices table {
+
+.card {
+  height: 100%;
+}
+
+
+
+#AboutUs .card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#AboutUs .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+
+/* price table */
+
+.table {
   border-radius: 12px;
   overflow: hidden; /* keeps rounded edges visible */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-
-#Prices table td, 
-#Prices table th {
+.table td, 
+.table th {
   border: none; 
   padding: 14px 18px;
 }
 
-#Prices tbody tr {
+.tbody tr {
   border-bottom: 1px solid rgba(255,255,255,0.15); /* subtle divider */
 }
 
-#Prices tbody tr:hover {
+.tbody tr:hover {
   background-color: rgba(255,255,255,0.1);
   transform: scale(1.01);
   transition: 0.2s ease-in-out;
