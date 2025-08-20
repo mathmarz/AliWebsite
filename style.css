@@ -87,3 +87,12 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+.myImg {
+  border-radius: 12px;                  /* rounded corners */
+  overflow: hidden;                     /* keeps corners neat */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow like tables */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* smooth hover */
+  width: 100%;                          /* responsive */
+  display: block;                        /* remove inline gaps */
+}
