@@ -19,3 +19,27 @@
     .card {
       height: 100%;
     }
+
+    #Prices table {
+  border-radius: 12px;
+  overflow: hidden; /* keeps rounded edges visible */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+#Prices table td, 
+#Prices table th {
+  border: none; 
+  padding: 14px 18px;
+}
+
+#Prices tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.15); /* subtle divider */
+}
+
+#Prices tbody tr:hover {
+  background-color: rgba(255,255,255,0.1);
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
